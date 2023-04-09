@@ -15,5 +15,11 @@ return (
 }
 
 FriendList.propTypes = {
-    friends: PropTypes.array,
+    friends: PropTypes.arrayOf(PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        avatar: PropTypes.string.isRequired,
+        isOnline: PropTypes.bool.isRequired,
+        id: PropTypes.number
+        })
+    ),
 };

@@ -22,6 +22,10 @@
   
 }
 
+.tableRow:nth-child(even) {
+    background-color: lightgray;
+}
+
 .tableFirstColumn{
     text-transform: capitalize;
 }

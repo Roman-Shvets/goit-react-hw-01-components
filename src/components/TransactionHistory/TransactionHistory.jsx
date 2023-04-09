@@ -14,8 +14,7 @@ return (
 
 <tbody>
       {items.map((item, index) =>(
-        <tr key={item.id} className={css.tableRow}
-          style={index % 2 === 0 ? { backgroundColor: "white" } : { backgroundColor: "lightgrey" }}>
+        <tr key={item.id} className={css.tableRow}>
           <td className={css.tableFirstColumn}>{item.type}</td>
           <td>{item.amount}</td>
           <td>{item.currency}</td>
@@ -28,5 +27,11 @@ return (
 
 
 TransactionHistory.propTypes = {
-items: PropTypes.array,
+  items: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.string.isRequired,
+    currency: PropTypes.string.isRequired,
+    })
+  ),
 };
