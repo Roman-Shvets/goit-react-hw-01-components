@@ -1,0 +1,30 @@
+.statusOff{
+    width: 23px;
+    height: 23px;
+    background-color: red;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+
+.statusOn {
+    width: 23px;
+    height: 23px;
+    background-color: green;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.avatar{
+    margin: 10px 20px 10px 20px ;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    }
+
+
+.name{
+    font-size: 30px;
+    margin:0;
+    font-weight: 600;
+}
+    

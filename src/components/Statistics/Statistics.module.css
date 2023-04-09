@@ -1,0 +1,36 @@
+.statistics{
+    width: 350px;
+    text-align: center;
+    margin: 20px auto;
+    background: white;
+    border: 2px solid rgb(215, 211, 211);
+    border-radius: 5px;
+}
+
+.title{
+    text-transform: uppercase;
+    color: grey;
+    margin: 40px 0;
+}
+
+.statList{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color: rgb(20, 206, 215);
+    margin: 0;
+    padding: 0;
+}
+
+.item{
+    color: white;
+}
+
+.label{
+    color: white;
+}
+
+.percentage{
+    font-size: larger;
+}
+
